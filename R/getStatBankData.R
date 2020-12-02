@@ -5,7 +5,7 @@ getStatBankData <- function(table,metadata=TRUE,type="px"){
   if(!is.character(table)) stop("The table name was not entered as a string.")
   if(!is.logical(metadata)) stop("The metadata argument was not entered as a logical. Please use TRUE or FALSE.")
   if(!(type %in% c("px","df","col","row","ts","jstat"))) stop("The type was not found. Please use \"px\", \"df\",\"col\", \"row\", \"ts\", or \"jstat\".")
-  if((table %in% c(paste0("NAH0",1:9),paste0("NAH",10:30)))) stop("Historical National Accounts are lazy loaded by the statbanker package.")
+  #if((table %in% c(paste0("NAH0",1:9),paste0("NAH",10:30)))) stop("Historical National Accounts are lazy loaded by the statbanker package.")
 
   # Download the data
 
