@@ -1,7 +1,7 @@
 The statbanker package
 ==========
 
-This R package can be used to retrieve data from the Central Statistics Office of Ireland's [pxStat database](https://data.cso.ie/). 
+This R package can be used to retrieve data from the Central Statistics Office of Ireland's [PxStat database](https://data.cso.ie/). 
 
 The package can retrieve the data from two sources:
 
