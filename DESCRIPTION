@@ -1,14 +1,12 @@
 Package: statbanker
-Type: Package
-Title: Retrieve Data From CSO PxStat
-Version: 7.0.0
-Date: 2020-12-01
-Authors@R: c(person("Graeme", "Walsh", role = c("aut", "cre"),
-  	     email = "Graeme.Walsh@hotmail.co.uk"))
-Author: Graeme Walsh [aut, cre]
-Maintainer: Graeme Walsh <Graeme.Walsh@hotmail.co.uk>
-Depends: pxR, reshape, rjson
-Description: The package can be used to retrieve data from CSO PxStat.
-License: GPL-3
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
