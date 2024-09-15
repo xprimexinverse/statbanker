@@ -7,7 +7,7 @@
 #'
 #' @examples
 px2ts <- function(px){
-  if(!is(px,"px")) stop("Input data is not a px object.")
+  if(!methods::is(px,"px")) stop("Input data is not a px object.")
   data  <- px2col(px)
   start <- as.character(data[1,1])
   end   <- as.character(data[nrow(data),1])

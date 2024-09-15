@@ -18,13 +18,15 @@ getStatBankData <- function(table,metadata=TRUE,type="px"){
 
   # Download the data
 
-  if(type=="jstat"){
-    data     <- fromJSON(file=paste0("http://www.cso.ie/StatbankServices/StatbankServices.svc/jsonservice/responseinstance/",table))
-    metadata <- FALSE # I'll switch this back on at a later stage
-  }else{
-    #data <- pxR::read.px(px_files_urls[grep(table,px_files_urls)]) # May need to add an encoding option here
-    data <- pxR::read.px(paste0("https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",table,"/PX/2013/en/"))
-  }
+  # if(type=="jstat"){
+  #   data     <- fromJSON(file=paste0("http://www.cso.ie/StatbankServices/StatbankServices.svc/jsonservice/responseinstance/",table))
+  #   metadata <- FALSE # I'll switch this back on at a later stage
+  # }else{
+  #   #data <- pxR::read.px(px_files_urls[grep(table,px_files_urls)]) # May need to add an encoding option here
+  #   data <- pxR::read.px(paste0("https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",table,"/PX/2013/en/"))
+  # }
+
+  data <- pxR::read.px(paste0("https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",table,"/PX/2013/en/"))
 
   # Print metadata
 

@@ -7,12 +7,12 @@
 #'
 #' @examples
 px2col <- function(px){
-  if(!is(px,"px")) stop("Input data is not a px object.")
+  if(!methods::is(px,"px")) stop("Input data is not a px object.")
   data       <- as.data.frame(px)
-  col.data   <- rename(data, c("dat"="value"))
+  col.data   <- plyr::rename(data, c("dat"="value"))
   string     <- names(data)
-  remove     <- c ("Year", "Quarter", "Month", "value","CensusYear","HalfYear")
-  z          <- string [! string %in% remove]
-  columnized <- cast(data, formula=paste("... ~ ", paste(z, collapse= " + ")))
+  remove     <- c("Year", "Quarter", "Month", "value","CensusYear","HalfYear")
+  z          <- string[! string %in% remove]
+  columnized <- reshape2::cast(data, formula=paste("... ~ ", paste(z, collapse= " + ")))
   return(columnized)
 }
