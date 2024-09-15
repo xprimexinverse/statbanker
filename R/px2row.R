@@ -13,6 +13,6 @@ px2row <- function(px){
   string   <- names(col.data)
   remove   <- c("Year", "Quarter", "Month", "value","CensusYear","HalfYear")
   z        <- string[! string %in% remove]
-  rowized  <- reshape2::cast(col.data, formula=paste(paste(z, collapse= " + ")," ~ ... "))
+  rowized  <- reshape::cast(col.data, formula=paste(paste(z, collapse= " + ")," ~ ... "))
   return(rowized)
 }

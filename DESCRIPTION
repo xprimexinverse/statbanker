@@ -13,4 +13,4 @@ Imports:
     methods,
     plyr,
     pxR,
-    reshape2
+    reshape
