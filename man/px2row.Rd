@@ -2,13 +2,16 @@
 % Please edit documentation in R/px2row.R
 \name{px2row}
 \alias{px2row}
-\title{Title}
+\title{Convert px Object to Column-Orientated Dataframe}
 \usage{
-px2row(x)
+px2row(px)
 }
 \arguments{
-\item{x}{}
+\item{px}{A px object (from pxR package)}
+}
+\value{
+A data.frame
 }
 \description{
-Title
+Convert px Object to Column-Orientated Dataframe
 }

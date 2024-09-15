@@ -2,13 +2,16 @@
 % Please edit documentation in R/px2col.R
 \name{px2col}
 \alias{px2col}
-\title{Title}
+\title{Convert px Object to Column-Orientated Dataframe}
 \usage{
-px2col(x)
+px2col(px)
 }
 \arguments{
-\item{x}{}
+\item{px}{A px object (from pxR package)}
+}
+\value{
+A data.frame
 }
 \description{
-Title
+Convert px Object to Column-Orientated Dataframe
 }

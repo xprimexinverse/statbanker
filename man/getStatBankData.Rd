@@ -2,13 +2,20 @@
 % Please edit documentation in R/getStatBankData.R
 \name{getStatBankData}
 \alias{getStatBankData}
-\title{Title}
+\title{Retrieve data from CSO's PxStat Open Data Platform database.}
 \usage{
-getStatBankData(x)
+getStatBankData(table, metadata = TRUE, type = "px")
 }
 \arguments{
-\item{x}{}
+\item{table}{A string}
+
+\item{metadata}{A boolean value}
+
+\item{type}{A string}
+}
+\value{
+px, data.frame, ts or mts
 }
 \description{
-Title
+Retrieve data from CSO's PxStat Open Data Platform database.
 }

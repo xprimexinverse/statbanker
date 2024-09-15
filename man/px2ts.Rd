@@ -2,13 +2,16 @@
 % Please edit documentation in R/px2ts.R
 \name{px2ts}
 \alias{px2ts}
-\title{Title}
+\title{Convert px Object to ts (or mts) Object}
 \usage{
-px2ts(x)
+px2ts(px)
 }
 \arguments{
-\item{x}{}
+\item{px}{A px object (from pxR package)}
+}
+\value{
+A ts (or mts) object
 }
 \description{
-Title
+Convert px Object to ts (or mts) Object
 }
