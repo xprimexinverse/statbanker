@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
+UNDER CONSTRUCTION - Come back later... =D
+
 The goal of statbanker is to download data from the CSO's PxStat Open Data Database.
 
 ## Installation
@@ -35,7 +37,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(statbanker)
-## basic example code
+NAQ01 <- getStatBankData("NAQ01", type = "px")
+NAQ01_TS <- px2ts(NAQ01) 
+plot.ts(NAQ01_TS[,2])
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
