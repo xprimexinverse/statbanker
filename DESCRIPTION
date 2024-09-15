@@ -3,7 +3,7 @@ Title: Download data from CSO's PxStat Database
 Version: 8.0.0.9000
 Authors@R: 
     person("Graeme", "Walsh", , "graeme.walsh@hotmail.co.uk", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0009-0005-9190-376X"))
 Description: Download data the from CSO's PxStat Open Data Statistical Database.
 License: MIT + file LICENSE
 Encoding: UTF-8
