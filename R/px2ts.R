@@ -22,11 +22,11 @@ px2ts <- function(px){
     }
     end_year   <- as.numeric(substr(end,1,4))
     end_period <- as.numeric(substr(end,6,8)); end_period <- as.numeric(gsub("^0","",end_period))
-    data       <- ts(data, end=c(end_year,end_period), frequency=frequency)
+    data       <- stats::ts(data, end=c(end_year,end_period), frequency=frequency)
   } else {
     frequency <- 1
     end_year  <- as.numeric(substr(end,1,4))
-    data      <- ts(data, end=c(end_year), frequency=frequency)
+    data      <- stats::ts(data, end=c(end_year), frequency=frequency)
   }
   return(data)
 }
